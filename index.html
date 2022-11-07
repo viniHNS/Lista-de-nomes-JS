@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/62c44247f4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-custom">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Cadastro de Pessoas</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="home" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="features" href="features.html">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="contact" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-4">
+      <form>
+        <div class="row mb-3 align-items-center">
+          <div class="col-md mb-3">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control nome"
+                id="floatingInput"
+                placeholder="Nome"
+              />
+              <label for="floatingInput">Nome</label>
+            </div>
+          </div>
+
+          <div class="col-md mb-3">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control tel"
+                id="floatingInput"
+                placeholder="Telefone"
+              />
+              <label for="floatingInput">Telefone</label>
+            </div>
+          </div>
+
+          <div class="col-md mb-3">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control idade"
+                id="floatingInput"
+                placeholder="Idade"
+              />
+              <label for="floatingInput">Idade</label>
+            </div>
+          </div>
+
+          <div class="col-md mb-3">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control cpf"
+                id="floatingInput"
+                placeholder="CPF"
+              />
+              <label for="floatingInput">CPF</label>
+            </div>
+          </div>
+
+          <div class="col-md mb-3 d-flex justify-content-center">
+            <button
+              type="button"
+              onclick="adicionaLinha()"
+              class="btn btn-primary"
+            >
+              Adicionar
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="container">
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr class="cabeca">
+            <th scope="col">ID</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Telefone</th>
+            <th scope="col">Idade</th>
+            <th scope="col">CPF</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody class="tbody"></tbody>
+      </table>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    
+    <footer class="container-fluid">
+      <p class="text-white text-center sticky-bottom footer">
+        Desenvolvido com <i class="fa-solid fa-heart text-danger"></i>
+      </p>
+    </footer>
+    <script src="vanilla-masker.js"></script>
+  </body>
+</html>

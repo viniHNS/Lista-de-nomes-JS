@@ -1,0 +1,16 @@
+.bg-custom{
+    background-color: #2b2b2b;
+}
+
+.list-tec{
+    list-style-type: none;
+}
+
+.footer{
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin: 1rem 0 1rem 0;
+}
